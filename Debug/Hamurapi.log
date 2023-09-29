@@ -1,0 +1,8 @@
+﻿  GenerateRandomValuesFunctions.cpp
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(7,22): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(14,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(20,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(21,14): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(22,27): warning C4244: return: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\GenerateRandomValuesFunctions.cpp(27,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Hamurapi.vcxproj -> C:\Users\User\Desktop\Hamurapi\Debug\Hamurapi.exe
