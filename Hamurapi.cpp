@@ -25,8 +25,7 @@ float wheatBushelsRatsDestroyed = 0.0; // сколько бушелей пшен
 float gotBushelsFromOneSowAcre = 0.0; // сколько бушелей пшеницы уничтожили крысы
 
 // statistics
-float averageDiedFromHungerPercentage = 0.0; // Среднегодовой процент умерших от голода
-float acresForOneCitizen = 0.0; //  Количество акров земли на одного жителя
+float diedFromHungerPercentageSumAllTime = 0.0; // Среднегодовой процент умерших от голода
 
 
 
@@ -83,6 +82,7 @@ void calculatePopulation() {
         cout << peopleDiedFromHunger << " человек умерло от голода" << endl;
         return;
     }
+    diedFromHungerPercentageSumAllTime += peopleDiedFromHunger / currentPopulation;
 
     if (generateRandomWasChuma()) {
         peopleDiedFromChuma = currentPopulation / 2;
@@ -106,6 +106,7 @@ void calculatePopulation() {
         cout << endl << "Все вымерли" << endl;
         return;
     }
+
 }
 
 void gameLoop() {
@@ -129,7 +130,7 @@ int main()
         currentRound++;
     }
     if (currentRound == 11 && !youLoose) {
-        evaluateLeadership(averageDiedFromHungerPercentage, acresForOneCitizen);
+        evaluateLeadership(diedFromHungerPercentageSumAllTime/10, citySquareInAcres/currentPopulation);
     }
     return 0;
 }
