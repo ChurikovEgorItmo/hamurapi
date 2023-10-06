@@ -48,3 +48,15 @@ int inputHowManyBushelsEat(float wheatBushelsNumber) {
     }
     return howManyBushelsEat;
 }
+
+int inputNeedLoadGame() {
+    double needLoadGame;
+    cout << "Мой повелитель, хотите продолжить или начнем все сначала? 1 - продолжить, 2 - сначала.   ";
+    while (!(cin >> needLoadGame) || needLoadGame < 1 || needLoadGame > 2 || !(needLoadGame == static_cast<int>(needLoadGame))) {
+        cin.clear(); //clear bad input flag
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); //discard input
+        cout << "Нужно ввести 1 или 2. Нажмите 1 - продолжить, 2 - сначала.  ";
+    }
+    return needLoadGame;
+}
+

@@ -1,12 +1,11 @@
 ﻿  Hamurapi.cpp
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(34,66): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(35,70): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(36,67): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(61,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(61,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(65,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(71,45): warning C4244: =: преобразование "int" в "float", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(94,113): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(132,61): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
-C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(132,28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(83,66): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(84,70): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(85,67): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(110,72): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(110,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(114,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(120,45): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(144,113): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\User\Desktop\Hamurapi\Hamurapi.cpp(185,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
   Hamurapi.vcxproj -> C:\Users\User\Desktop\Hamurapi\Debug\Hamurapi.exe

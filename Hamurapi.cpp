@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <fstream>
 #include "UserInputFunctionsHeader.h"
 #include "GenerateRandomValuesFunctionsHeader.h"
 #include "CalculateFunctionsHeader.h"
@@ -26,6 +27,55 @@ float gotBushelsFromOneSowAcre = 0.0; // сколько бушелей пшен�
 
 // statistics
 float diedFromHungerPercentageSumAllTime = 0.0; // Среднегодовой процент умерших от голода
+
+void saveProgress() {
+    ofstream file("progress.txt");
+    if (file.is_open()) {
+        file.clear();
+        file << currentRound << endl;
+        file << citySquareInAcres << endl;
+        file << acreCostInWheatBushels << endl;
+        file << currentPopulation << endl;
+        file << peopleDiedFromHunger << endl;
+        file << peopleDiedFromChuma << endl;
+        file << peopleCameToCity << endl;
+        file << wheatAcresSow << endl;
+        file << wheatBushelsNumber << endl;
+        file << wheatBushelsGot << endl;
+        file << wheatBushelsEat << endl;
+        file << wheatBushelsRatsDestroyed << endl;
+        file << gotBushelsFromOneSowAcre << endl;
+        file << diedFromHungerPercentageSumAllTime << endl;
+        file.close();
+    }
+}
+
+void loadProgress() {
+    ifstream file("progress.txt");
+        if (file.is_open()) {
+            int needLoadGame = inputNeedLoadGame();
+            if (needLoadGame == 1) {
+                file >> currentRound;
+                file >> citySquareInAcres;
+                file >> acreCostInWheatBushels;
+                file >> currentPopulation;
+                file >> peopleDiedFromHunger;
+                file >> peopleDiedFromChuma;
+                file >> peopleCameToCity;
+                file >> wheatAcresSow;
+                file >> wheatBushelsNumber;
+                file >> wheatBushelsGot;
+                file >> wheatBushelsEat;
+                file >> wheatBushelsRatsDestroyed;
+                file >> gotBushelsFromOneSowAcre;
+                file >> diedFromHungerPercentageSumAllTime;
+                file.close();
+            }
+            else {
+                file.clear();
+            }
+        }
+}
 
 
 
@@ -115,11 +165,13 @@ void gameLoop() {
     manageUserInputs();
     calculateWheatGrow();
     calculatePopulation();
+    saveProgress();
 }
 
 int main()
 {
     setlocale(LC_ALL, "Russian");
+    loadProgress();
     while (currentRound < 11)
     {
         if (youLoose) {
